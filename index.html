@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DDS Street</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./assets/fundo-logo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<a href="./index.html">
+					<img src="./assets/Logo.jpg" alt="logo" class="logo-img" />
+				</a>
+			</div>
+
+			<form class="search-container">
+				<input type="search" id="searchInput" placeholder="Pesquisar" />
+				<button type="button" class="search-button">
+					<img src="./assets/search.png" class="button-icon" />
+				</button>
+			</form>
+
+			<div class="social-media">
+				<a href="https://www.instagram.com/dds_street/" target="_blank">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+
+				<a href="https://api.whatsapp.com/send?phone=5511950676163&text=Oi,%20tudo%20bem?" target="_blank">
+					<i class="fa-brands fa-whatsapp"></i>
+				</a>
+
+				
+			</div>
+			<div class="menu-icon" id="menuIcon">
+				<i class="fa fa-navicon" style="font-size:30px; margin-right: 10px;"></i>
+			</div>
+		</div>
+
+		<div class="navbar-container">
+			<nav>
+				<ul class="nav-list" id="navList">
+					<a href="#" class="link">
+						<li> HOME </li>
+					</a>
+					<a href="#t-shirt">
+						<li> CAMISETAS </li>
+					</a>
+					<a href="#blouse">
+						<li> BLUSAS </li>
+					</a>
+					<a href="#shorts">
+						<li> BERMUDAS </li>
+					</a>
+					<a href="#cap">
+						<li> BONÉS </li>
+					</a>
+					<a href="#off">
+						<li> OFERTAS </li>
+					</a>
+					<a href="#ctt">
+						<li> CONTATO </li>
+					</a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="main-content">
+		<section id="#">
+			<div class="slider">
+				<div class="slides">
+					<input type="radio" name="radio-btn" id="radio1">
+					<input type="radio" name="radio-btn" id="radio2">
+					<input type="radio" name="radio-btn" id="radio3">
+
+					<div class="slide first">
+						<img src="./assets/banner.jpg" alt="imagem 1">
+					</div>
+					<div class="slide">
+						<img src="./assets/banner2.jpg" alt="imagem 2">
+					</div>
+					<div class="slide">
+						<img src="./assets/banner3.jpg" alt="imagem 3">
+					</div>
+
+					<div class="navigation-auto">
+						<div class="auto-btm1"></div>
+						<div class="auto-btm2"></div>
+						<div class="auto-btm3"></div>
+					</div>
+				</div>
+
+				<div class="manual-navigation">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+				</div>
+			</div>
+		</section>
+
+		<div class="instrução-container">
+			<span class="instrução"> clique no tamanho de sua preferência para ver as cores disponiveis </span>
+		</div>
+
+		<section id="t-shirt">
+			<div class="t-shirt-container">
+				<div class="t-shirt-content">
+					<span class="title"> CAMISETAS </span>
+					<div class="t-shirt-cards">
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="1">
+								<img id="t-shirt-image" class="t-shirt-img clickable-image" src="./assets/camiseta-8.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-a" class="color-button preto"></button>
+								<button id="branco-a" class="color-button branco"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-a">G</p>
+									<p class="size" id="size-a1">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta chronic premium </span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20chronic%20premium%20https://i.imgur.com/NJ5FfsJ_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="2">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-9.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="branco-b" class="color-button branco"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-b">M</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta chronic premium </span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20chronic%20premium%20https://i.imgur.com/6uMwJRS_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<!-- <div class="t-shirt-card">
+							<div class="img-container" data-carousel="3">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-7.jpg" alt="">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-7.1.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: flex;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: flex;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-c" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-c">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta chronic premium</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20premium%20sufgang%20https://i.imgur.com/4sDfAjL_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div> -->
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="4">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-10.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="verde-d" class="color-button verde"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-d">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta high armadilha</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20high%20armadilha%20https://i.imgur.com/vORC4a0_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="5">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-6.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="roxo-e" class="color-button roxo"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-e">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text"> camiseta high premium </span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20high%20premium%20https://i.imgur.com/ayklUz0_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="6">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-14.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="branco-f" class="color-button branco"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-f">G2</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta plus size high popeye</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20plus%20size%20high%20popeye%20https://i.imgur.com/Hsw2dZk_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="7">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-12.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-g" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-g">G1</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta plus size adidas</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20plus%20size%20adidas%20https://i.imgur.com/W0KbPcS_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="8">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-13.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="cinza-h" class="color-button cinza"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-h">G2</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta plus size</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20plus%20size%20https://i.imgur.com/ciSOIb1_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="9">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-15.webp" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="branco-i" class="color-button branco"></button>
+								<button id="branco-i1" class="color-button branco"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-i">M</p>
+									<p class="size" id="size-i1">G</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta premium dgk</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20premium%20dgk%20https://i.imgur.com/I3nQOGf_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="10">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-5.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-j" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-j">G</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta nike</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20nike%20https://i.imgur.com/JTQnPL8_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="11">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-11.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="branco-k" class="color-button branco"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-k">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta nike</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20nike%20https://i.imgur.com/VyURqFv_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="12">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-16.jpg" alt="">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-16.1.jpeg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: flex;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: flex;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-l" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-l">G</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta santa cruz</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20santa%20cruz%20https://i.imgur.com/LYWmMlY_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="13">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-2.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-m" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-m">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta santa cruz</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20santa%20cruz%20https://i.imgur.com/KOf0Wfm_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="14">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-1.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-n" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-n">M</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta sufgang ˢᵃ</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20sufgang%20ˢᵃ%20https://i.imgur.com/OJp9usw_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="15">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-3.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-o" class="color-button preto"></button>
+								<button id="preto-o1" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-o">G</p>
+									<p class="size" id="size-o1">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta sufgang premium</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20sufgang%20premium%20https://i.imgur.com/7nwFTHi_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="t-shirt-card">
+							<div class="img-container" data-carousel="16">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-17.jpg" alt="">
+								<img class="t-shirt-img clickable-image" src="./assets/camiseta-17.1.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: flex;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: flex;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-p" class="color-button preto"></button>
+								<button id="branco-p1" class="color-button branco"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-p">M</p>
+									<p class="size" id="size-p1">G</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">camiseta sufgang premium</span>
+								<span class="t-shirt-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20sufgang%20premium%20https://i.imgur.com/rembg9G_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="blouse">
+			<div class="blouse-container">
+				<div class="blouse-content">
+					<span class="title"> BLUSAS </span>
+					<div class="blouse-cards">
+						<div class="blouse-card">
+							<div class="img-container" data-carousel="17">
+								<img class="blouse-img clickable-image" src="./assets/blusa-1.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-q" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-q">M</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">blusa moletom high</span>
+								<span class="blouse-value">R$139,99</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nesse%20moletom%20high%20https://i.imgur.com/YrIlczl_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="blouse-card">
+							<div class="img-container" data-carousel="18">
+								<img class="blouse-img clickable-image" src="./assets/blusa-2.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-r" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-r">P</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">blusa moletom vans</span>
+								<span class="blouse-value">R$139,99</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nesse%20moletom%20vans%20https://i.imgur.com/76D2OZ7_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="blouse-card">
+							<div class="img-container" data-carousel="19">
+								<img class="blouse-img clickable-image" src="./assets/blusa-3.jpg" alt="">
+								<img class="blouse-img clickable-image" src="./assets/blusa-4.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: flex;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: flex;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-s" class="color-button preto"></button>
+								<button id="marrom-s1" class="color-button marrom"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-s">G</p>
+									<p class="size" id="size-s1">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">blusa moletom sufgang</span>
+								<span class="blouse-value">R$139,99</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nesse%20moletom%20sufgang%20https://i.imgur.com/PU2GjDf_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section id="shorts">
+			<div class="shorts-container">
+				<div class="shorts-content">
+					<span class="title"> BERMUDAS </span>
+					<div class="shorts-cards">
+						<div class="shorts-card">
+							<div class="img-container" data-carousel="20">
+								<img class="shorts-img clickable-image" src="./assets/bermuda-2.jpg" alt="">
+								<img class="shorts-img clickable-image" src="./assets/bermuda-3.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-t" class="color-button preto"></button>
+								<button id="bege-t1" class="color-button bege"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-t">G</p>
+									<p class="size" id="size-t1">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">bermuda cargo high</span>
+								<span class="shorts-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20bermuda%20cargo%20high%20https://i.imgur.com/2jTuOoL_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="shorts-card">
+							<div class="img-container" data-carousel="21">
+								<img class="shorts-img clickable-image" src="./assets/bermuda-5.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-u" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-u">M</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">bermuda elastano high</span>
+								<span class="shorts-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20bermuda%20elastano%20high%20https://i.imgur.com/5Ymuo75_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="shorts-card">
+							<div class="img-container" data-carousel="22">
+								<img class="shorts-img clickable-image" src="./assets/bermuda-4.jpeg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-v" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-v">GG</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">bermuda cargo nike</span>
+								<span class="shorts-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20bermuda%20cargo%20nike%20https://i.imgur.com/dDYCZJY_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="shorts-card">
+							<div class="img-container" data-carousel="23">
+								<img class="shorts-img clickable-image" src="./assets/bermuda-6.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="container-buttons">
+								<button id="preto-w" class="color-button preto"></button>
+							</div>
+							<div class="options">
+								<div class="size-container">
+									<p class="size" id="size-w">M</p>
+								</div>
+							</div>
+							<div class="description">
+								<span class="card-text">bermuda elastano nike</span>
+								<span class="shorts-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20bermuda%20elastano%20nike%20https://i.imgur.com/PuMOASu_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<section id="cap">
+			<div class="cap-container">
+				<div class="cap-content">
+					<span class="title"> BONÉS </span>
+					<div class="cap-cards">
+						<div class="cap-card">
+							<div class="img-container" data-carousel="23">
+								<img class="cap-img clickable-image" src="./assets/bone-5.jpg" alt="">
+								<img class="cap-img clickable-image" src="./assets/bone-6.jpg" alt="">
+								<img class="cap-img clickable-image" src="./assets/bone-3.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: flex;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: flex;">&gt;</button>
+							<div class="description">
+								<span class="card-text">boné high</span>
+								<span class="cap-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nesse%20boné%20high%20https://i.imgur.com/bWOLcK4_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="cap-card">
+							<div class="img-container" data-carousel="24">
+								<img class="cap-img clickable-image" src="./assets/bone-2.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="description">
+								<span class="card-text">boné grizzly</span>
+								<span class="cap-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nesse%20boné%20grizzly%20https://i.imgur.com/JY1CFdD_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+
+						<div class="cap-card">
+							<div class="img-container" data-carousel="25">
+								<img class="cap-img clickable-image" src="./assets/bone-4.jpg" alt="">
+							</div>
+							<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+							<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+							<div class="description">
+								<span class="card-text">boné vans</span>
+								<span class="cap-value">R$55,00</span>
+								<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nesse%20boné%20vans%20https://i.imgur.com/HmsWLkD_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+									target="_blank" class="whatsapp-button">
+									Encaminhar ao vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+									</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="off">
+			<div class="off-container">
+				<div class="off-content">
+					<span class="title-2"> OFERTAS </span>
+					<img class="off-img clickable-image" src="./assets/oferta-2.jpg" alt="">
+				</div>
+			</div>
+
+		</section>
+
+		<section id="ctt">
+			<span class="title-2">FALE COMIGO</span>
+			<div class="ctt-container">
+				<div class="form-container">
+					<form class="ctt-content" action="https://formsubmit.co/el/tuheba" method="POST">
+						<label class="ctt-label"> EMAIL:
+							<input class="ctt-input" type="email" name="email" placeholder="Coloque um email valido">
+						</label>
+						<label class="ctt-label"> NOME:
+							<input class="ctt-input" type="text" name="name" placeholder="">
+						</label>
+						<label class="ctt-label"> TELEFONE:
+							<input class="ctt-input" type="text" name="phone" placeholder="">
+						</label>
+						<label class="ctt-label"> MENSAGEM:
+							<textarea name="message" placeholder=""></textarea>
+						</label>
+						<button class="send-button" type="submit">Enviar</button>
+					</form>
+				</div>
+				<div class="ctt-social-midia">
+					<div class="social-midia-card">
+						<a href="https://www.instagram.com/dds_street/" target="_blank">
+							<i class="fa-brands fa-instagram" style="font-size: 150px;"></i>
+							<p class="social-media-text"> INSTAGRAM </p>
+						</a>
+					</div>
+
+					<div class="social-midia-card">
+						<a href="https://api.whatsapp.com/send?phone=5511950676163&text=Oi,%20tudo%20bem?" target="_blank">
+							<i class="fa-brands fa-whatsapp" style="font-size: 150px;"></i>
+							<p class="social-media-text"> WHATSAPP </p>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<footer>
+		<p class="footer-logo">DDS STREET</p>
+		<p class="copyrigth">Desenvolvido por &copy; JVS</p>
+	</footer>
+
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/a747b09475.js" crossorigin="anonymous"></script>
+	<script src="./script.js" defer></script>
+</body>
+
+</html>
+
+
+
+<!-- 
+
+<div class="t-shirt-card">
+	<div class="img-container" data-carousel="1">
+		<img  id="t-shirt-image" class="t-shirt-img clickable-image" src="./assets/camiseta-10.jpg" alt="">
+		<img  id="t-shirt-image" class="t-shirt-img clickable-image" src="./assets/camiseta-8.jpg" alt="">
+	</div>
+	<button id="carousel-button" class="prev" style="display: none;">&lt;</button>
+	<button id="carousel-button" class="next" style="display: none;">&gt;</button>
+	<div class="container-buttons" id="btns">
+		<button id="sufgang-vinho" class="color-button"></button>
+		<button id="sufgang-branco" class="color-button"></button>
+		<button id="sufgang-verde" class="color-button"></button>
+		<button id="sufgang-azul" class="color-button"></button>
+	</div>
+	<div class="options">
+		<div class="size-container">
+			<p class="size" id="size1">P</p>
+			<p class="size" id="size2">M</p>
+			<p class="size" id="size3">G</p>
+			<p class="size" id="size4">GG</p>
+		</div>
+	</div>
+	<div class="description">
+		<span class="card-text">camiseta premium sufgang</span>
+		<span class="t-shirt-value">R$55,00</span>
+		<a href="https://wa.me/5511950676163?text=Olá,%20estou%20interessado%20nessa%20camiseta%20premium%20sufgang%20https://i.imgur.com/jsIFoKe_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+			target="_blank" class="whatsapp-button">
+			Encaminhar para o vendedor <i class="fa-brands fa-whatsapp" style="color: green;">
+			</i>
+		</a>
+	</div>
+</div> -->
