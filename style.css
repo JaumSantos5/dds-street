@@ -8,12 +8,27 @@
 	scroll-behavior: smooth;
 }
 
+*::-webkit-scrollbar{
+	width: 8px;
+}
+
+*::-webkit-scrollbar-track{
+	background: #000;
+}
+
+*::-webkit-scrollbar-thumb{
+	background-color: #ff0000;
+	border-radius: 5px;
+	
+}
+
 body {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	user-select: none;
 }
 
 header {
