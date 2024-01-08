@@ -543,12 +543,12 @@ li:hover {
 #carousel-button-prev,
 #carousel-button-next {
 	position: absolute;
-	top: 40%;
+	top: 35%;
 	transform: translateY(-50%);
 	background: none;
 	border: none;
 	text-shadow: 3px 3px #000;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 900;
 	color: rgb(201, 31, 31);
 	cursor: pointer;
