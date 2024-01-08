@@ -83,6 +83,7 @@ clickableImages.forEach(image => {
 
 
 
+
 // carrossel de produtos iguais
 
 
@@ -93,9 +94,8 @@ carousels.forEach(carousel => {
     const prevBtn = carousel.querySelector('.prev');
     const nextBtn = carousel.querySelector('.next');
     const images = carousel.querySelector('.img-container');
-    const carouselNumber = images.getAttribute('data-carousel');
     let counter = 0;
-    
+
     const imageWidth = carousel.clientWidth; // Largura do contêiner do carrossel
 
     // Ajuste para tornar as imagens responsivas
@@ -126,328 +126,87 @@ carousels.forEach(carousel => {
 
 
 
-
-// Selecione os botões de cores
-const pretoButtonA = document.getElementById("preto-a");
-const brancoButtonA = document.getElementById("branco-a");
-const brancoButtonB = document.getElementById("branco-b");
-// const pretoButtonC = document.getElementById("preto-c");
-const verdeButtonD = document.getElementById("verde-d");
-const roxoButtonE = document.getElementById("roxo-e");
-const brancoButtonF = document.getElementById("branco-f");
-const pretoButtonG = document.getElementById("preto-g");
-const cinzaButtonH = document.getElementById("cinza-h");
-const brancoButtonI = document.getElementById("branco-i");
-const brancoButtonI1 = document.getElementById("branco-i1");
-const pretoButtonJ = document.getElementById("preto-j");
-const brancoButtonK = document.getElementById("branco-k");
-const pretoButtonL = document.getElementById("preto-l");
-const pretoButtonM = document.getElementById("preto-m");
-const pretoButtonN = document.getElementById("preto-n");
-const pretoButtonO = document.getElementById("preto-o");
-const pretoButtonO1 = document.getElementById("preto-o1");
-const pretoButtonP = document.getElementById("preto-p");
-const brancoButtonP1 = document.getElementById("branco-p1");
-const pretoButtonQ = document.getElementById("preto-q");
-const pretoButtonR = document.getElementById("preto-r");
-const pretoButtonS = document.getElementById("preto-s");
-const marromButtonS1 = document.getElementById("marrom-s1");
-// const pretoButtonT = document.getElementById("preto-t");
-// const begeButtonT1 = document.getElementById("bege-t1");
-// const pretoButtonU = document.getElementById("preto-u");
-// const pretoButtonV = document.getElementById("preto-v");
-// const pretoButtonW = document.getElementById("preto-w");
+//mudança de cores de acordo com o tamanho
 
 
+const cores = [
+    'preto-t1', 'branco-t1', 'branco-t2', 'preto-t3', 'verde-t4', 'roxo-t5',
+    'branco-t6', 'preto-t7', 'cinza-t8', 'branco-t9', 'branco-t9', 'preto-t10',
+    'branco-t11', 'preto-t12', 'preto-t13', 'preto-t14', 'preto-t15', 'preto-t16',
+    'branco-t16', 'bege-t17', 'preto-t18', 'preto-t19', 'preto-t20', 'branco-t20',
+    'preto-t21', 'preto-t22', 'laranja-t23', 'preto-t24', 'preto-t25', 'azul-t26',
+    'preto-t27', 'preto-t28', 'branco-t29', 'preto-t29', 'branco-t29', 'preto-t30',
+    'preto-t31', 'preto-bl1', 'preto-bl2', 'preto-bl3', 'marrom-bl3',
+];
 
-//Opções de cores e tamanho
+const sizes = [
+    'size-t1', 'size-t1-1', 'size-t2', 'size-t3', 'size-t4', 'size-t5', 'size-t6',
+    'size-t7', 'size-t8', 'size-t9', 'size-t9-1', 'size-t10', 'size-t11', 'size-t12',
+    'size-t13', 'size-t14', 'size-t15', 'size-t16', 'size-t16-1', 'size-t17', 'size-t18',
+    'size-t19', 'size-t20', 'size-t20-1', 'size-t21', 'size-t22', 'size-t23', 'size-t24',
+    'size-t25', 'size-t26', 'size-t27', 'size-t28', 'size-t29', 'size-t29-1', 'size-t29-2',
+    'size-t30', 'size-t31', 'size-bl1', 'size-bl2', 'size-bl3', 'size-bl3-1'
+];
 
-const size1 = document.getElementById("size1");
-const sizeA = document.getElementById("size-a");
-const sizeA1 = document.getElementById("size-a1");
-const sizeB = document.getElementById("size-b");
-// const sizeC = document.getElementById("size-c");
-const sizeD = document.getElementById("size-d");
-const sizeE = document.getElementById("size-e");
-const sizeF = document.getElementById("size-f");
-const sizeG = document.getElementById("size-g");
-const sizeH = document.getElementById("size-h");
-const sizeI = document.getElementById("size-i");
-const sizeI1 = document.getElementById("size-i1");
-const sizeJ = document.getElementById("size-j");
-const sizeK = document.getElementById("size-k");
-const sizeL = document.getElementById("size-l");
-const sizeM = document.getElementById("size-m");
-const sizeN = document.getElementById("size-n");
-const sizeO = document.getElementById("size-o");
-const sizeO1 = document.getElementById("size-o1");
-const sizeP = document.getElementById("size-p");
-const sizeP1 = document.getElementById("size-p1");
-const sizeQ = document.getElementById("size-q");
-const sizeR = document.getElementById("size-r");
-const sizeS = document.getElementById("size-s");
-const sizeS1 = document.getElementById("size-s1");
-// const sizeT = document.getElementById("size-t");
-// const sizeT1 = document.getElementById("size-t1");
-// const sizeU = document.getElementById("size-u");
-// const sizeV = document.getElementById("size-v");
-// const sizeW = document.getElementById("size-w");
+const tShirtColors = {
+    'preto-t1': 'preto',
+    'branco-t1': 'branco',
+    // Adicione outras cores conforme necessário
+};
 
-
-
-
-
-
-
-
-
-function desativarBotoesAtivos() {
-    pretoButtonA.classList.remove("active");
-    brancoButtonA.classList.remove("active");
-    brancoButtonB.classList.remove("active");
-    // pretoButtonC.classList.remove("active");
-    verdeButtonD.classList.remove("active");
-    roxoButtonE.classList.remove("active");
-    brancoButtonF.classList.remove("active");
-    pretoButtonG.classList.remove("active");
-    cinzaButtonH.classList.remove("active");
-    brancoButtonI.classList.remove("active");
-    brancoButtonI1.classList.remove("active");
-    pretoButtonJ.classList.remove("active");
-    brancoButtonK.classList.remove("active");
-    pretoButtonL.classList.remove("active");
-    pretoButtonM.classList.remove("active");
-    pretoButtonN.classList.remove("active");
-    pretoButtonO.classList.remove("active");
-    pretoButtonO1.classList.remove("active");
-    pretoButtonP.classList.remove("active");
-    brancoButtonP1.classList.remove("active");
-    pretoButtonQ.classList.remove("active");
-    pretoButtonR.classList.remove("active");
-    pretoButtonS.classList.remove("active");
-    marromButtonS1.classList.remove("active");
-    // pretoButtonT.classList.remove("active");
-    // begeButtonT1.classList.remove("active");
-    // pretoButtonU.classList.remove("active");
-    // pretoButtonV.classList.remove("active");
-    // pretoButtonW.classList.remove("active");
+function mudarImagem(tshirtId, cor) {
+    const tshirtImage = document.querySelector(`#${tshirtId} .t-shirt-img`);
+    const imageMap = {
+        'preto': './assets/camiseta-8.2.jpg',
+        'branco': './assets/camiseta-8.1.jpg',
+        // Adicione outras cores conforme necessário
+    };
+    tshirtImage.src = imageMap[cor] || './assets/camiseta-8.1.jpg';
 }
 
+function activateButton(buttonId, tshirtId, cor) {
+    const button = document.getElementById(buttonId);
+    button.addEventListener('click', function () {
+        mudarImagem(tshirtId, cor);
+    });
+}
 
+function desativarBotoesAtivos() {
+    cores.forEach((cor) => {
+        const button = document.getElementById(cor);
+        button.classList.remove('active');
+    });
+}
 
-sizeA.addEventListener("click", () => {  //camiseta chronic 1
-    pretoButtonA.classList.add("active");
-    brancoButtonA.classList.remove("active");
-    event.stopPropagation();
+cores.forEach((cor, index) => {
+    activateButton(cor, 't-shirt', tShirtColors[cor]);
+
+    // Verifica se o elemento com o ID em sizes[index] existe antes de adicionar o event listener
+    const size = document.getElementById(sizes[index]);
+    if (size) {
+        size.addEventListener('click', () => {
+            desativarBotoesAtivos();
+            const button = document.getElementById(cor);
+            button.classList.add('active');
+        });
+    }
 });
 
-sizeA1.addEventListener("click", () => {  //camiseta chronic 1
-    brancoButtonA.classList.add("active");
-    pretoButtonA.classList.remove("active");
-    event.stopPropagation();
-});
-
-sizeB.addEventListener("click", () => {  //camiseta chronic 2
-    brancoButtonB.classList.add("active");
-    event.stopPropagation();
-});
-
-// sizeC.addEventListener("click", () => {  //camiseta chronic 3
-//     pretoButtonC.classList.add("active");
-//     event.stopPropagation();
-// });
-
-sizeD.addEventListener("click", () => {  //camiseta high 1
-    verdeButtonD.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeE.addEventListener("click", () => {  //camiseta high 2
-    roxoButtonE.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeF.addEventListener("click", () => {  //camiseta high 3
-    brancoButtonF.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeG.addEventListener("click", () => {  //camiseta adidas 1
-    pretoButtonG.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeH.addEventListener("click", () => {  //camiseta plus size 1
-    cinzaButtonH.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeI.addEventListener("click", () => {  //camiseta dgk 1
-    brancoButtonI.classList.add("active");
-    brancoButtonI1.classList.remove("active");
-    event.stopPropagation();
-});
-
-sizeI1.addEventListener("click", () => {  //camiseta dgk 2
-    brancoButtonI1.classList.add("active");
-    brancoButtonI.classList.remove("active");
-    event.stopPropagation();
-});
-
-sizeJ.addEventListener("click", () => {  //camiseta nike 1
-    pretoButtonJ.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeK.addEventListener("click", () => {  //camiseta nike 2
-    brancoButtonK.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeL.addEventListener("click", () => {  //camiseta santa cruz 1
-    pretoButtonL.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeM.addEventListener("click", () => {  //camiseta santa cruz 2
-    pretoButtonM.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeN.addEventListener("click", () => {  //camiseta sufgang 1
-    pretoButtonN.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeO.addEventListener("click", () => {  //camiseta sufgang 2
-    pretoButtonO.classList.add("active");
-    pretoButtonO1.classList.remove("active");
-    event.stopPropagation();
-});
-
-sizeO1.addEventListener("click", () => {  //camiseta sufgang 3
-    pretoButtonO1.classList.add("active");
-    pretoButtonO.classList.remove("active");
-    event.stopPropagation();
-});
-
-sizeP.addEventListener("click", () => {  //camiseta sufgang 4
-    pretoButtonP.classList.add("active");
-    brancoButtonP1.classList.remove("active");
-    event.stopPropagation();
-});
-
-sizeP1.addEventListener("click", () => {  //camiseta sufgang 5
-    brancoButtonP1.classList.add("active");
-    pretoButtonP.classList.remove("active");
-    event.stopPropagation();
-});
-
-sizeQ.addEventListener("click", () => {  //blusa high 1
-    pretoButtonQ.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeR.addEventListener("click", () => {  //blusa vans 1
-    pretoButtonR.classList.add("active");
-    event.stopPropagation();
-});
-
-sizeS.addEventListener("click", () => {  //blusa sufgang 1
-    pretoButtonS.classList.add("active");
-    marromButtonS1.classList.remove("active");
-    event.stopPropagation();
-});
-
-sizeS1.addEventListener("click", () => {  //blusa sufgang 1
-    marromButtonS1.classList.add("active");
-    pretoButtonS.classList.remove("active");
-    event.stopPropagation();
-});
-
-// sizeT.addEventListener("click", () => {  //bermuda high 1
-//     pretoButtonT.classList.add("active");
-//     begeButtonT1.classList.remove("active");
-//     event.stopPropagation();
-// });
-
-// sizeT1.addEventListener("click", () => {  //bermuda high 1
-//     begeButtonT1.classList.add("active");
-//     pretoButtonT.classList.remove("active");
-//     event.stopPropagation();
-// });
-
-// sizeU.addEventListener("click", () => {  //blusa vans 1
-//     pretoButtonU.classList.add("active");
-//     event.stopPropagation();
-// });
-
-// sizeV.addEventListener("click", () => {  //blusa vans 1
-//     pretoButtonV.classList.add("active");
-//     event.stopPropagation();
-// });
-
-// sizeW.addEventListener("click", () => {  //blusa vans 1
-//     pretoButtonW.classList.add("active");
-//     event.stopPropagation();
-// });
-
-
-
-document.addEventListener("click", (event) => {
+document.addEventListener('click', (event) => {
     const areaClicada = event.target;
-    if (areaClicada !== pretoButtonA && areaClicada !== brancoButtonA && areaClicada !== brancoButtonB //&& areaClicada !== pretoButtonC//
-         && areaClicada !== verdeButtonD
-        && areaClicada !== roxoButtonE && areaClicada !== brancoButtonF && areaClicada !== pretoButtonG && areaClicada !== cinzaButtonH && areaClicada !== brancoButtonI
-        && areaClicada !== brancoButtonI1 && areaClicada !== pretoButtonJ && areaClicada !== brancoButtonK && areaClicada !== pretoButtonL && areaClicada !== pretoButtonM
-        && areaClicada !== pretoButtonN && areaClicada !== pretoButtonO && areaClicada !== pretoButtonO1 && areaClicada !== pretoButtonP && areaClicada !== brancoButtonP1
-        // && areaClicada !== pretoButtonQ && areaClicada !== pretoButtonR && areaClicada !== pretoButtonS && areaClicada !== marromButtonS1 && areaClicada !== pretoButtonT
-        // && areaClicada !== begeButtonT1 && areaClicada !== pretoButtonU && areaClicada !== pretoButtonV && areaClicada !== pretoButtonW
-        ) {
+    const isCorButton = cores.includes(areaClicada.id);
+    const isSizeButton = sizes.includes(areaClicada.id);
+    const isButtonActive = isCorButton || isSizeButton;
+
+    if (!isButtonActive) {
         desativarBotoesAtivos();
     }
 });
 
 
-
-
-
-
-
-
-
-
-
-
-function mudarImagem(shortsId, cor) {
-    const shortsImage = document.querySelector(`#${shortsId} .shorts-img`);
-    
-    // Lógica para alterar a imagem de acordo com a cor
-    switch (cor) {
-        case 'preto':
-            shortsImage.src = "./assets/bermuda-2.jpg";
-            break;
-        case 'bege':
-            shortsImage.src = "./assets/bermuda-3.jpg";
-            break;
-        // Adicione mais casos conforme necessário
-        default:
-            shortsImage.src = "./assets/bermuda-2.jpg"; // Imagem padrão se a cor não for reconhecida
-            break;
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    const pretoButtonT = document.getElementById("preto-t");
-    const begeButtonT1 = document.getElementById("bege-t1");
-
-    pretoButtonT.addEventListener("click", function () {
-        mudarImagem("shorts", 'preto');
-    });
-
-    begeButtonT1.addEventListener("click", function () {
-        mudarImagem("shorts", 'bege');
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    activateButton('preto-t1', 't-shirt', 'preto');
+    activateButton('branco-t1', 't-shirt', 'branco');
 });
 
 
