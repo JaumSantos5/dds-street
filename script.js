@@ -136,7 +136,8 @@ const cores = [
     'branco-t16', 'bege-t17', 'preto-t18', 'preto-t19', 'preto-t20', 'branco-t20',
     'preto-t21', 'preto-t22', 'laranja-t23', 'preto-t24', 'preto-t25', 'azul-t26',
     'preto-t27', 'preto-t28', 'branco-t29', 'preto-t29', 'branco-t29', 'preto-t30',
-    'preto-t31', 'preto-bl1', 'preto-bl2', 'preto-bl3', 'marrom-bl3',
+    'preto-t31', 'preto-bl1', 'preto-bl2', 'preto-bl3', 'marrom-bl3', 'preto-bm1',
+    'bege-bm1', 'preto-bm2',
 ];
 
 const sizes = [
@@ -145,7 +146,8 @@ const sizes = [
     'size-t13', 'size-t14', 'size-t15', 'size-t16', 'size-t16-1', 'size-t17', 'size-t18',
     'size-t19', 'size-t20', 'size-t20-1', 'size-t21', 'size-t22', 'size-t23', 'size-t24',
     'size-t25', 'size-t26', 'size-t27', 'size-t28', 'size-t29', 'size-t29-1', 'size-t29-2',
-    'size-t30', 'size-t31', 'size-bl1', 'size-bl2', 'size-bl3', 'size-bl3-1'
+    'size-t30', 'size-t31', 'size-bl1', 'size-bl2', 'size-bl3', 'size-bl3-1', 'size-bm1',
+    'size-bm1-1', 'size-bm2'
 ];
 
 const tShirtColors = {
