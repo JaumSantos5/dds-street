@@ -151,20 +151,12 @@ const sizes = [
 ];
 
 const tShirtColors = {
-    'preto-t1': 'preto',
-    'branco-t1': 'branco',
+   
     // Adicione outras cores conforme necessário
 };
 
-function mudarImagem(tshirtId, cor) {
-    const tshirtImage = document.querySelector(`#${tshirtId} .t-shirt-img`);
-    const imageMap = {
-        'preto': './assets/camiseta-8.2.jpg',
-        'branco': './assets/camiseta-8.1.jpg',
-        // Adicione outras cores conforme necessário
-    };
-    tshirtImage.src = imageMap[cor] || './assets/camiseta-8.1.jpg';
-}
+
+
 
 function activateButton(buttonId, tshirtId, cor) {
     const button = document.getElementById(buttonId);
@@ -207,8 +199,20 @@ document.addEventListener('click', (event) => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    activateButton('preto-t1', 't-shirt', 'preto');
-    activateButton('branco-t1', 't-shirt', 'branco');
+    activateButton();
+    activateButton();
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
